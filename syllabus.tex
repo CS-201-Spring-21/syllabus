@@ -1,0 +1,225 @@
+\documentclass[a4paper]{article}
+
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+% Roman section numbers
+% \renewcommand{\thesection}{\Roman{section}} 
+% \renewcommand\thesubsection{\Alph{subsection}}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\begin{document}
+\begin{center}
+  {\bfseries {\huge CS 201 Data Structures II}\\\bigskip
+    {\large 3+0 cedits, Spring 2021, Habib University}}\\\medskip
+
+\textit{``Bad programmers worry about the code. Good programmers worry about data structures and
+their relationships.''  –- Linus Torvalds}
+\end{center}
+\medskip
+
+\noindent
+\begin{tabularx}{1.0\linewidth}{lX}
+  Instructors:
+  & \href{https://habib.edu.pk/SSE/dr-waqar-saleem/}{Waqar Saleem}, \href{https://habib.edu.pk/SSE/muhammad-mobeen-movania/}{Muhammad Mobeen Movania}, Muhammad Abdullah Zafar\\
+  TAs:: & See Live Syllabus \\
+  Course sites: & \href{https://hulms.instructure.com/courses/1260}{LMS (Canvas)}, \href{https://habibedu.workplace.com/groups/145941763811786}{Workplace}, \href{https://bit.ly/3bSQH1k}{Live Syllabus}\\
+  Course Prerequisites: &  CS 102\\
+  Software Prerequisites: &  \LaTeX, Python, C++ (optional)\\
+  Hardware Prerequisites: & Computer with mic, camera, and Internet connection\\
+  Content Area: & This course is part of CS Kernel. It is required for the CS and CE majors and fulfills the requirements of a CS minor. For other students, it can be counted as either a Free Elective, University Elective, SSE Elective, CS Elective, or CS requirement.\\
+  Campus Safety Policy: & Please read the current campus safety policy and protocols if the classes are in-person.  
+\end{tabularx}
+\medskip
+
+\section{Rationale}
+
+Data Structures are at the heart of all efficient software. While transparent to the user, the choice of data structure plays a crucial role in the efficiency of software. In addition, the study and design of data structures pose an interesting intellectual challenge. 
+
+This course aims to make students proficient in the use of commonly used data structures. Students are expected to have proficiency in computer programming in a high level language. 
+
+\section{Course Aims and Outcomes}
+
+\subsection{Course Objectives}
+
+This course aims to:
+\begin{itemize}
+\item impart proficiency in basic data structures and related operations
+\item introduce a few higher level data structures
+\item impart a deeper understanding of the covered data structures through implementation
+\item develop critical judgment regarding the choice of data structure for a given problem
+\end{itemize}
+
+\subsection{Course Learning Outcomes (CLOs)}
+
+On successful completion of this course, you will:
+\begin{enumerate}
+\item perform basic operations on elementary data structures: list, tree, stack, queue.
+\item perform basic operations on higher level data structures: hash table, self balancing trees, heap, graph, trie, inverted index.
+\item correctly implement any of the covered data structures 
+\item correctly implement a researched data structure
+\item fruitfully collaborate on a technical project.
+\end{enumerate}
+
+\section{Program Learning Outcomes (PLOs) }
+
+Coming soon.
+
+\section{CLO to PLO mapping}
+
+Coming soon.
+
+% \noindent
+% \begin{tabularx}{1.0\linewidth}{|X||*5{X|}}
+%   \hline
+%   &CLO 1& CLO 2& CLO 3& CLO 4& CLO 5\\  \hline\hline
+%   PLO 1 & 25\%& 25\% & 25\% & 25\% & 25\%\\\hline
+% \end{tabularx}
+
+% Note – if the SLOs/CLOs are SMART then 1 SLO/CLO may target only one PLO, however, different SLOs/CLOs might contribute to a PLO.]
+
+\section{Format and Procedures}
+
+This is a programming heavy course. You will study new data structures and implement them in homework assignments. You will also research a previously unknown data structure and build an application around it for your final project. Luckily, all this work happens in teams.
+
+This is a 3 credit hour course. The rule of thumb for out-of-class time for a course is at least 2 hours of work outside class for every credit hour. In the previous iteration of this course, most students reported spending between 4 and 9 hours per week outside class. This may vary based on your comfort with programming and capacity to absorb and apply Computer Science concepts.
+
+\begin{description}
+\item[Medium of Instruction] The course will be a blend of asynchronous and synchronous content for different sections. Asynchronous content will be shared before the start of the synchronous sessions and students are expected to come well prepared for the synchronous sessions after watching all uploaded asynchronous content.
+\item[Time Journal] You are encouraged to maintain a journal to record the time that you spend on this course. This includes the time you spend watching asynchronous videos, attending live sessions, doing any background work, attempting the homework, filling the weekly feedback form, completing any other required forms, and so on. In short, any activity that you perform related to this course. 
+\item[Consultation] Please utilize student hours and Ehsas hours of the instructors and TAs in order to discuss course related matters and queries.
+\item[Course Material] All course resources (asynchronous videos, recorded sessions, reference books, articles and all other support material) will be made available through the course site on Canvas.
+\item[Punctuality] Please respect deadlines. Submit your work by the indicated time. Incomplete work will receive partial credit. Late work will not be accepted or graded. 
+\item[Contesting marks] Concerns regarding a score will be entertained by the respective instructor up to a week after the release of the score. Concerns raised later will not be entertained. 
+\item[Grace marks] Requests for grace marks for whatever reason will not be entertained and each such request will result in a penalty of 1\% from the overall score. 
+\item[Behavior] You are expected to maintain a behavior befitting Yohsin and acknowledging the classroom as a place of learning, exploration, and experimentation. The University’s standard policies on attendance, inclusivity, office hours, and academic integrity apply in this course. These are described below. 
+\end{description}
+
+\subsection{Engagement, Net-etiquette and Participation}
+  \begin{description}
+  \item[People, not boxes] In order to maintain a healthy class environment, you are encouraged to keep your camera on during live sessions. In case of extenuating circumstances that prevent you from doing so, you must communicate them to me beforehand over Canvas.
+  \item[Naming] Please make sure that your name on Zoom is the same as it appears on Canvas.
+  \item[Communication] All official course communication will take place over LMS. It is your responsibility to stay up to date with it. 
+  \end{description}
+
+\section{Course Requirements}
+
+This course requires command on programming in a high level language as well as sufficient maturity in computing to self-learn the necessary features of tertiary tools, e.g. \LaTeX and TikZ, GitHub, and Travis.
+
+\noindent\textbf{Course textbook}
+
+\begin{itemize}
+\item \textit{Open Data Structures} (pseudocode edition), by Pat Morin. Available online at \url{http://opendatastructures.org}.
+\item Other references will be used from time to time and will be shared accordingly over LMS.
+\end{itemize}
+
+\section{Assessments, SEL and Grading Procedures}
+
+\subsection{Assessments and SEL}
+
+Please see the Live Syllabus for up-to-date information on Assessment and SEL.
+
+\subsection{Mapping of Assessments to Course Learning Outcomes}
+
+This course’s assessment instruments are homework assignments (4), embedded quizzes (many), and a project. This is how they relate to the Course Learning Outcomes.
+\smallskip
+
+\noindent
+\begin{tabularx}{1.0\linewidth}{|l||*5{C|}}
+  \hline
+  &CLO 1& CLO 2& CLO 3& CLO 4& CLO 5\\  \hline\hline
+  Assignment 1 & 1 & & 1 & & 1 \\\hline
+  Assignment 2 & & 1 & 1 & & 1 \\\hline
+  Assignment 3 & & 1 & 1 & & 1 \\\hline
+  Assignment 4 & & 1 & 1 & & 1 \\\hline
+  Quizzes & 1 & 1 & & & \\\hline
+  Project & & & & 1 & 1 \\\hline
+\end{tabularx}
+
+\subsection{Grading Scale}
+
+The course will follow the standard DSSE grading scale given below. Please consult the Live Syllabus for details of the course assessments.
+
+\begin{center}
+  \begin{tabular}{|*3{c|}}
+\hline
+Letter Grade & Numerical Equivalent & Percentage\\\hline\hline
+A+ & 4.00 & [95-100] \\\hline
+A & 4.00 & [90-95) \\\hline
+A- & 3.67 & [85-90) \\\hline
+B+ & 3.33 & [80-85) \\\hline
+B & 3.00 & [75-80) \\\hline
+B- & 2.67 & [70-75) \\\hline
+C+ & 2.33 & [67-70) \\\hline
+C & 2.00 & [63-67) \\\hline
+C- & 1.67 & [60-63) \\\hline
+F & 0.00 & [0-60) \\\hline
+  \end{tabular}
+\end{center}
+
+\section{Attendance Policy}
+
+Students are expected to watch all the asynchronous videos and attend the synchronous classes. Attendance will be marked. However, a student may notify their instructor on Canvas beforehand or up to an hour later if they miss a class. Otherwise, they will be marked absent. Attendance contributes to SEL and the related policy is outlined in the Live Syllabus.
+
+I reserve the right to have you dropped from the course if you consistently maintain a low attendance, which will reflect in a low SEL score. You will receive one warning beforehand.
+
+This policy will be updated once classes resume in person.
+
+\section{Accommodations for students with disabilities}
+
+In compliance with the Habib University policy and equal access laws, I am available to discuss appropriate academic accommodations that may be required for student with disabilities. Requests for academic accommodations are to be made during the first two weeks of the semester, except for unusual circumstances, so arrangements can be made. Students are encouraged to register with the Office of Academic Performance to verify their eligibility for appropriate accommodations.
+
+\section{Inclusivity Statement}
+
+
+We understand that our members represent a rich variety of backgrounds and perspectives. Habib University is committed to providing an atmosphere for learning that respects diversity. While working together to build this community we ask all members to:
+\begin{itemize}
+\item share their unique experiences, values and beliefs
+\item be open to the views of others 
+\item honor the uniqueness of their colleagues
+\item appreciate the opportunity that we have to learn from each other in this community
+\item value each other’s opinions and communicate in a respectful manner
+\item keep confidential discussions that the community has of a personal (or professional) nature 
+\item use this opportunity together to discuss ways in which we can create an inclusive environment in this course and across the Habib community 
+\end{itemize}
+
+\section{Student hours}
+
+Please consult the Live Syllabus for up-to-date information on the student hours of the course staff. 
+
+\section{Academic Integrity}
+
+Each student in this course is expected to abide by the Habib University Student Honor Code of Academic Integrity. Any work submitted by a student in this course for academic credit will be the student's own work. 
+
+For this course, collaboration is allowed with your buddy in the following instances: \textbf{homework assignments and project}.
+
+Scholastic dishonesty shall be considered a serious violation of these rules and regulations and is subject to strict disciplinary action as prescribed by Habib University regulations and policies. Scholastic dishonesty includes, but is not limited to, cheating on exams, plagiarism on assignments, and collusion. 
+
+\paragraph{PLAGIARISM} Plagiarism is the act of taking the work created by another person or entity and presenting it as one’s own for the purpose of personal gain or of obtaining academic credit. As per University policy, plagiarism includes the submission of or incorporation of the work of others without acknowledging its provenance or giving due credit according to established academic practices. This includes the submission of material that has been appropriated, bought, received as a gift, downloaded, or obtained by any other means. Students must not, unless they have been granted permission from all faculty members concerned, submit the same assignment or project for academic credit for different courses. 
+
+\paragraph{CHEATING} The term cheating shall refer to the use of or obtaining of unauthorized information in order to obtain personal benefit or academic credit. 
+
+\paragraph{COLLUSION} Collusion is the act of providing unauthorized assistance to one or more person or of not taking the appropriate precautions against doing so.
+
+All violations of academic integrity will also be immediately reported to the Student Conduct Office.  
+
+You are encouraged to study together and to discuss information and concepts covered in the lecture with other students. You can give ``consulting'' help to or receive ``consulting'' help from such students. However, this permissible cooperation should never involve one student having possession of a copy of all or part of work done by someone else, in the form of an e-mail, an e-mail attachment file, a diskette, or a hard copy. 
+
+Should copying occur, the student who copied work from another student and the student who gave material to be copied will both be in violation of the Student Code of Conduct. 
+
+During examinations, you must do your own work. Talking or discussion is not permitted during the examinations, nor may you compare papers, copy from others, or collaborate in any way. Any collaborative behavior during the examinations will result in failure of the exam, and may lead to failure of the course and University disciplinary action.
+
+Penalty for violation of this Code can also be extended to include failure of the course and University disciplinary action. 
+
+\section{Week-wise Schedule}
+
+Please consult the Live Syllabus for the updated schedule.
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
