@@ -1,19 +1,23 @@
 \documentclass[a4paper]{article}
 
 \usepackage{geometry}
+\usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{makecell}
+\usepackage{multirow}
 \usepackage{tabularx}
 
 % Roman section numbers
 % \renewcommand{\thesection}{\Roman{section}} 
 % \renewcommand\thesubsection{\Alph{subsection}}
 
-\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X} % custom X column with horizontal centering
+\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in all columns
 
 \begin{document}
 \begin{center}
   {\bfseries {\huge CS 201 Data Structures II}\\\bigskip
-    {\large 3+0 cedits, Spring 2021, Habib University}}\\\medskip
+    {\large 3+0 credits, Spring 2021, Habib University}}\\\medskip
 
 \textit{``Bad programmers worry about the code. Good programmers worry about data structures and
 their relationships.''  –- Linus Torvalds}
@@ -54,31 +58,60 @@ This course aims to:
 
 \subsection{Course Learning Outcomes (CLOs)}
 
-On successful completion of this course, you will:
-\begin{enumerate}
-\item perform basic operations on elementary data structures: list, tree, stack, queue.
-\item perform basic operations on higher level data structures: hash table, self balancing trees, heap, graph, trie, inverted index.
-\item correctly implement any of the covered data structures 
-\item correctly implement a researched data structure
-\item fruitfully collaborate on a technical project.
-\end{enumerate}
 
-\section{Program Learning Outcomes (PLOs) }
+Course Learning Outcomes (CLOs) describe your knowledge, skills, and abilities on successful completion of a course. By the end of this course, you will achieve the following outcomes at the indicated \href{https://educerecentre.com/what-are-the-three-domains-of-blooms-taxonomy/}{learning levels}.
 
-Coming soon.
+\noindent
+\begin{tabularx}{\linewidth}{|>{\bfseries}c|>{\bfseries}l|X|c|}
+  \hline
+  \multirow{5}{*}[+3pt]{\rotatebox{90}{\small\makecell{Course Learning\\ Outcome (CLO)}}} & 1 & perform basic operations on elementary data structures: list, tree, stack, queue & Cog-6 \\\cline{2-4}
+  & 2 & perform basic operations on higher level data structures: hash table, self balancing trees, heap, graph, trie, inverted index & Cog-6 \\\cline{2-4}
+  & 3 & correctly implement any of the covered data structures  & Psy-5 \\\cline{2-4}
+  & 4 & correctly implement a researched data structure & Psy-4 \\\cline{2-4}
+  & 5 & fruitfully collaborate on a technical project. & Ff-3 \\\hline
+\end{tabularx}
 
-\section{CLO to PLO mapping}
 
-Coming soon.
+\subsection{Program Learning Outcomes (PLOs) }
 
-% \noindent
-% \begin{tabularx}{1.0\linewidth}{|X||*5{X|}}
-%   \hline
-%   &CLO 1& CLO 2& CLO 3& CLO 4& CLO 5\\  \hline\hline
-%   PLO 1 & 25\%& 25\% & 25\% & 25\% & 25\%\\\hline
-% \end{tabularx}
+Program Learning Outcomes (PLOs) describe your knowledge, skills, and abilities at the time of graduation. Shown below is the level of emphasis that each of the CLOs places on specific PLOs of the Computer Science program.
 
-% Note – if the SLOs/CLOs are SMART then 1 SLO/CLO may target only one PLO, however, different SLOs/CLOs might contribute to a PLO.]
+\noindent
+{\small
+\begin{tabularx}{\linewidth}{|>{\bfseries}c|>{\bfseries}l|X||*{5}{c|}}
+  \cline{4-8}
+  \multicolumn{3}{c}{} & \multicolumn{5}{|c|}{\textbf{CLO}} \\\cline{4-8}
+   \multicolumn{3}{c|}{} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} \\\hline
+  \multirow{6}{*}[-10pt]{\rotatebox{90}{\makecell{Program Learning\\ Outcome (PLO)}}}
+& 1 & Analysis: analyze a given situation and reduce it to one or more problems that can be solved via computer intervention. &  &  &  & 80\% & \\\cline{2-8}
+& 2 & Design: design one or more computer-based solutions of a given problem and select the solution that is best under the circumstances. & 20\%  & 20\%  & 20\%  & 40\% & \\\cline{2-8}
+& 4 & Implementation: design and implement software systems of varying complexity. & 80\%  & 80\%  & 80\%  & 80\% & \\\cline{2-8}
+& 5 & Tools: work with the latest tools that support development, e.g., IDE's, version control systems, debuggers, profilers, and continuous build systems. & 60\% & 60\% & 60\% & 60\% & 60\% \\\cline{2-8}
+& 6 & Self-learning: research, learn, and apply requirements needed to implement a solution for a given high level problem & 20\% & 20\% & 20\% & 80\% &  \\\cline{2-8}
+& 8 & Communication and Teamwork: work effectively in inter-disciplinary teams. & 50\% & 50\% & 50\% & 50\% & 50\% \\\hline
+\end{tabularx}
+}
+
+\begin{itemize}
+\item The assessment for CLO 4 requires proposing a novel application which has to be analyzed (PLO 1) for computer implementation.
+\item The assessments for CLOs 1 through 3 describe a problem in high level terms and require you to design (PLO 2) a computer implementation provided some initial guidance. For the CLO 4 assessment, you will design the implementation completely independently.
+\item The assessments for CLOs 1 through 4 require computer implementation (PLO 4) in a high level programming language.
+\item The assessments for CLOs 1 through 5 require working with a formal document preparation system, a version control system, and a continuous integration system (PLO 5).
+\item Students will self-learn (PLO 6) the appropriate features of the above tools. The assessment for CLO 4 requires research and self-learning on a novel data structure.
+\item All assessments are attempted in teams (PLO 8) and teamwork is assessed.
+\end{itemize}
+
+% CS PLOs
+% \begin{enumerate}
+% \item[1] Analysis: analyze a given situation and reduce it to one or more problems that can be solved via computer intervention.
+% \item[2] Design: design one or more computer-based solutions of a given problem and select the solution that is best under the circumstances.
+% \item[3] Programming: program a given solution in a variety of programming languages belonging to different paradigm.
+% \item[4] Implementation: design and implement software systems of varying complexity.
+% \item[5] Tools: work with the latest tools that support development, e.g., IDE's, version control systems, debuggers, profilers, and continuous build systems.
+% \item[6] Self-learning: research, learn, and apply requirements needed to implement a solution for a given high level problem description.
+% \item[7] Ethics and Awareness: foresee both impact and possible ramifications of computing practices
+% \item[8] Communication and Teamwork: work effectively in inter-disciplinary teams.
+% \end{enumerate}
 
 \section{Format and Procedures}
 
